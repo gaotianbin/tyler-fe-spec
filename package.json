@@ -1,0 +1,48 @@
+{
+  "name": "tyler-fe-spec",
+  "private": true,
+  "description": "tyler--前端工程化",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "husky install",
+    "init": "pnpm install --no-frozen-lockfile",
+    "clean": "lerna clean && rm -rf node_modules",
+    "test": "lerna run test",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "deploy": "bash deploy.sh",
+    "publish": "lerna publish",
+    "lint": "markdownlint README.md",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+  },
+  "keywords": [
+    "tyler",
+    "fe spec",
+    "fe-spec"
+  ],
+  "author": "tyler",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^20.3.1",
+    "husky": "^9.1.7",
+    "lerna": "^9.0.3",
+    "markdownlint": "^0.40.0",
+    "pnpm": "^10.28.1",
+    "rimraf": "^6.1.2",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.8.1",
+    "typedoc": "^0.28.16",
+    "typescript": "^5.9.3",
+    "vue-template-compiler": "^2.7.16",
+    "vuepress": "^1.9.10",
+    "vuepress-plugin-one-click-copy": "^1.0.6",
+    "vuepress-plugin-zooming": "^1.1.8"
+  },
+  "dependencies": {
+    "conventional-changelog-conventionalcommits": "^9.1.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

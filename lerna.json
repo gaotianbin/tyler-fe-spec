@@ -1,0 +1,17 @@
+{
+  "version": "independent",
+  "npmClient": "pnpm",
+  "command": {
+    "publish": {
+      "npmClient": "npm",
+      "message": "chore(release): publish %s",
+      "registry":"https://registry.npmjs.org"
+    },
+    "bootstrap": {
+      "npmClientArgs": ["--no-package-lock"]
+    }
+  },
+  "packages": [
+    "packages/*"
+  ]
+}
