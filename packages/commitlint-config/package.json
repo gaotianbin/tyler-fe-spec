@@ -1,11 +1,11 @@
 {
-  "name": "markdownlint-config-tyler",
+  "name": "commitlint-config-tyler",
   "version": "1.0.0",
-  "main": "index.json",
-  "description": "文档规范",
+  "main": "index.js",
+  "description": "Git规范",
   "keywords": [
     "tyler",
-    "markdown",
+    "commit",
     "lint"
   ],
   "author": "tyler",
@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/gaotianbin/tyler-fe-spec/issues"
   },
-  "peerDependencies": {
-    "markdownlint": "^0.40.0"
+  "dependencies": {
+    "conventional-changelog-conventionalcommits": "^9.1.0"
   }
 }
