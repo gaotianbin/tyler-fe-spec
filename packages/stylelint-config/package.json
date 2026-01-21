@@ -1,25 +1,33 @@
 {
-  "name": "commitlint-config-tyler",
-  "version": "1.0.1-alpha.0",
+  "name": "stylelint-config-tyler",
+  "version": "1.0.0",
+  "description": "Tyler CSS规范",
   "main": "index.js",
-  "description": "Git规范",
   "keywords": [
     "tyler",
-    "commit",
+    "style",
     "lint"
   ],
+  "scripts": {
+    "test": "jest"
+  },
   "author": "Tyler",
   "homepage": "https://github.com/gaotianbin/tyler-fe-spec#readme",
   "license": "ISC",
+  "peerDependencies": {
+    "stylelint": ">=8.3.0",
+    "stylelint-scss": ">=2.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "stylelint": "^14.3.0",
+    "stylelint-scss": "^4.1.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gaotianbin/tyler-fe-spec.git"
   },
   "bugs": {
     "url": "https://github.com/gaotianbin/tyler-fe-spec/issues"
-  },
-  "dependencies": {
-    "conventional-changelog-conventionalcommits": "^9.1.0"
-  },
-  "gitHead": "36fbdd062ef22de7415f0075597c2a91075d3d74"
+  }
 }
